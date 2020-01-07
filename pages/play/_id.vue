@@ -1,3 +1,25 @@
+<style lang="scss" scoped>
+.player-box{
+    position: relative;
+    .tips{
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        z-index: 2;
+        background: rgba(0,0,0,0.7);
+        color: white;
+        font-size: 14px;
+        line-height: 14px;
+        padding: 6px 12px;
+        border-radius: 13px;
+        .open{
+            color: #FDD000;
+            margin-left: 6px;
+        }
+    }
+}
+</style>
+
 <template>
     <div class="container">
         <!-- 顶部导航 -->
@@ -11,6 +33,10 @@
             <div class="wrap">
                 <!-- 播放盒子 -->
                 <div class="player-box">
+                    <div class="tips">
+                        开通会员观看完整版
+                        <a href="javascript:;" class="open">开通VIP</a>
+                    </div>
                     <template v-if="CurrentAdv.data">
                         <div class="adv-player">
                             <div class="close">{{ CurrentAdv.countDown }}</div>
