@@ -1,0 +1,21 @@
+// 电脑自适应
+// 手机自适应
+@media screen and (max-width: 1440px) {
+    // .index-subject{
+    //     .subject-entry{
+    //         width: 100% !important;
+    //     }
+    //     .upload-download{
+    //         width: 30% !important;
+    //         .group{
+    //             border-left: 0 !important;
+    //         }
+    //     }
+    //     .ggw{
+    //         width: 20% !important;
+    //     }
+    // }
+    .toper .search-area .other-enter{
+        display: none;
+    }
+}

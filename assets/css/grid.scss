@@ -1,0 +1,86 @@
+// 伸缩盒 start -------------------------------------------
+.row::after {
+    content: "";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+.col {
+    float: left;
+}
+
+// 手机
+@media screen and (max-width: $mobile-width) {
+    @for $i from 1 through 12 {
+        .col-mobile-#{$i} {
+            width: 100% / 12 * $i !important;
+        }
+    }
+    @for $i from 1 through 24 {
+        .col2-mobile-#{$i} {
+            width: 100% / 24 * $i !important;
+        }
+    }
+    @for $i from 1 through 24 {
+        .rem-mobile-#{$i} {
+            width: #{$i}rem !important;
+        }
+    }
+    .col-mobile-1dot5 {
+        width: 12.5% !important;
+    }
+    .col-mobile-1-5 {
+        width: 20% !important;
+    }
+}
+
+// 平板
+@media screen and (min-width: $mobile-width) {
+    @for $i from 1 through 12 {
+        .col-pad-#{$i} {
+            width: 100% / 12 * $i !important;
+        }
+    }
+    @for $i from 1 through 24 {
+        .col2-pad-#{$i} {
+            width: 100% / 24 * $i !important;
+        }
+    }
+    @for $i from 1 through 24 {
+        .rem-pad-#{$i} {
+            width: #{$i}rem !important;
+        }
+    }
+    .col-pad-1dot5 {
+        width: 12.5% !important;
+    }
+    .col-pad-1-5 {
+        width: 20% !important;
+    }
+}
+
+// 电脑
+@media screen and (min-width: $pad-width) {
+    @for $i from 1 through 12 {
+        .col-pc-#{$i} {
+            width: 100% / 12 * $i !important;
+        }
+    }
+    @for $i from 1 through 24 {
+        .col2-pc-#{$i} {
+            width: 100% / 24 * $i !important;
+        }
+    }
+    @for $i from 1 through 24 {
+        .rem-pc-#{$i} {
+            width: #{$i}rem !important;
+        }
+    }
+    .col-pc-1dot5 {
+        width: 12.5% !important;
+    }
+    .col-pc-1-5 {
+        width: 20% !important;
+    }
+}

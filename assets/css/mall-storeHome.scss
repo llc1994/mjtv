@@ -1,0 +1,222 @@
+// 背景颜色
+.container.mall-storeHome {
+    background-color: #f4f4f4;
+
+    img {
+        &.top-info-store-logo-img {
+            height: 100%;
+        }
+
+        &.goods-watch-video-img {
+            height: 15px;
+        }
+
+        &.goods-logo-bigplay-img {
+            height: 41px;
+        }
+    }
+}
+
+.top-info-storeinfo-bg {
+    width: 100%;
+    padding: 7px 0 1px 0;
+    //background-color: #00adef;
+
+    .top-info-storeinfo-content-bg {
+        background-color: #fff;
+        height: 121px;
+        padding: 0 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .storeinfo-logo-name-bg {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            .storeinfo-logo-bg {
+                width: 66px;
+                height: 66px;
+                border: 1px solid rgba(153, 153, 153, 0.55);
+                border-radius: 50%;
+                overflow: hidden;
+                margin-right: 30px;
+            }
+
+            .storeinfo-name-bg {
+                //background-color: #c4a31d;
+
+                p {
+                    //background: #c4a31d;
+                    color: #333;
+                    font-size: 16px;
+                    display: flex;
+                    align-items: center;
+
+                    &.store-name {
+                        font-size: 20px;
+                        margin-bottom: 16px;
+                    }
+
+                    span {
+                        color: #ff0000;
+
+                        &.store-tag {
+                            background-color: #faefee;
+                            padding: 0 5px;
+                            border-radius: 4px;
+                            color: #ce4031;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .storeinfo-follow-btn-bg {
+            //background-color: #c4a31d;
+            padding: 10px;
+
+            p {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 68px;
+                background-color: #fb0124;
+                border-radius: 10px;
+                color: #fff;
+                font-size: 14px;
+                height: 30px;
+                &.active {
+                    background-color: #fd8027;
+                }
+            }
+        }
+    }
+}
+
+.store-allgoods-bg {
+    .store-allgoods-content-bg {
+        background-color: #fff;
+        padding: 0 10px 0 20px;
+        margin-bottom: 20px;
+
+        .store-allgoods-content-item-bg {
+            .allgoods-content-title-bg {
+                //background-color: #c4a31d;
+                padding: 30px 0 15px 0;
+
+                p {
+                    color: #000;
+                    font-size: 32px;
+                }
+            }
+
+            .allgoods-content-item-bg {
+                //background-color: #c4a31d;
+                margin-bottom: 30px;
+                padding-right: 10px;
+
+
+                .item-goods-content-bg {
+                    width: 100%;
+                    //background-color: #1aa203;
+
+                    .goods-logo-img-bg {
+                        position: relative;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: cover;
+                        padding-top: 100%;
+                        // background-image: url("../../static/temp-3.png");
+                        overflow: hidden;
+
+                        .goods-logo-bigplay-img-bg {
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: rgba(0, 0, 0, 0.4);
+                        }
+                    }
+
+                    .goods-title-price-bg {
+                        //background-color: #c4a31d;
+                        padding-top: 10px;
+
+                        .goods-price-bg {
+                            margin-top: 5px;
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: baseline;
+                            //background-color: #1aa203;
+                        }
+
+                        p {
+                            color: #999;
+                            font-size: 14px;
+
+                            &.goods-title {
+                                //background-color: #00ADEF;
+                                height: 45px;
+                                color: #333;
+                                font-size: 16px;
+                                display: -webkit-box;
+                                -webkit-box-orient: vertical;
+                                -webkit-line-clamp: 2;
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                            }
+
+                            &.goods-current-price {
+                                margin-right: 8px;
+                                color: #ef1923;
+                                font-size: 18px;
+                                //background-color: #1aa203;
+                            }
+
+                            &.goods-orgin-price {
+                                text-decoration: line-through;
+                                //background-color: #c4a31d;
+                            }
+                        }
+
+                        .goods-price-row-bg {
+                            //background-color: #c4a31d;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            .video-goods-current-price {
+                                //width: 55%;
+                                color: #ef1923;
+                                font-size: 18px;
+                                //background-color: #1aa203;
+                            }
+
+                            .watch-video-text-bg {
+                                background-color: #00adef;
+                                padding: 0 10px;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                border-radius: 13px;
+
+                                p {
+                                    margin-left: 3px;
+                                    color: #fff;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,165 @@
+// 手机自适应
+@media screen and (max-width: $mobile-width) {
+    body {
+        .custom-scroll::-webkit-scrollbar {
+            width: 0px;
+            height: 0px;
+            background-color: transparent;
+        }
+        .index-slide .rank-list {
+            display: none;
+        }
+        .index-subject {
+            display: none;
+        }
+        .mobile-category-navigation{
+            display: block;
+        }
+        .toper {
+            height: 50px;
+            .logo-area {
+                .logo {
+                    height: 60%;
+                }
+            }
+
+            // 搜索区域
+            .search-area {
+                display: none;
+            }
+            // 快速入口
+            .quick-area {
+                .img {
+                    flex: 0 0 30px;
+                    height: 30px;
+                    width: 30px;
+
+                    &.search {
+                        display: none;
+                    }
+                    &.vip {
+                        display: none;
+                    }
+                    &.upload {
+                        display: none;
+                    }
+                    &.mobile {
+                        display: none;
+                    }
+                }
+                .pc{
+                    display: none !important;
+                }
+                .mobile2{
+                    display: block !important;
+                }
+            }
+
+        }
+        .fixed-navigation{
+            display: none;
+        }
+        .index-title {
+            .more {
+                display: none;
+            }
+        }
+        .pai-hang-bang {
+            display: none;
+        }
+        .toper-space {
+            height: 50px;
+        }
+
+        .category-rank {
+            padding-right: 0;
+            padding-left: 0;
+        }
+        .protocol {
+            .row {
+                text-align: center;
+            }
+            .col {
+                margin-top: 10px;
+            }
+        }
+        .index-subject .subject-entry .group {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .wrap2 {
+            padding: 0 5px !important;
+            .row {
+                padding: 0 !important;
+            }
+            .index-title {
+                padding: 5px !important;
+            }
+            .col {
+                padding: 5px !important;
+            }
+        }
+        .player-area-wrap{
+            padding: 0;
+        }
+        .player-area{
+
+            .wrap{
+                flex-direction: column;
+                flex-wrap: wrap;
+                padding: 0;
+            }
+            .player-box{
+                flex: 0 0 13.5rem;
+                height: 13.5rem;
+            }
+            .player-list{
+                padding-top: 20px;
+                padding-left: 10px;
+                padding-right: 10px;
+                flex: 0 0 auto;
+                height: auto;
+                .course-list{
+                    height: 48rem;
+                    flex: 0  0 48rem;
+                }
+            }
+            .recommand-area{
+                flex: 0 0 24rem;
+                max-height: 24rem;
+            }
+
+        }
+    }
+
+    // 首页标题字体大小
+    .index-title .title {
+        height: 24px;
+        line-height: 24px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .index-title .section .tag {
+        font-size: 12px;
+        height: 20px;
+        padding: 3px 6px;
+        margin-left: 10px;
+        border-radius: 8px;
+    }
+
+    // 子项目自适应
+    .index-subject .upload-download {
+        padding-left: 0 !important;
+    }
+    .index-subject .subject-entry {
+        margin: 0 !important;
+    }
+    .index-subject .upload-download .group {
+        border-left: 0 !important;
+    }
+
+    // 媒体区域
+    .media-area .wrap {
+        margin: 0 !important;
+    }
+}

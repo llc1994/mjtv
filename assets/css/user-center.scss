@@ -1,0 +1,266 @@
+// 用户中心
+.user-center {
+    margin-top: 50px;
+    .wrap {
+        display: flex;
+    }
+    .menu {
+        flex: 0 0 320px;
+        background-color: #f8f8f8;
+        .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #e7f6fc;
+            padding: 30px 10px 40px 10px;
+            .head-thumbnail {
+                flex: 0 0 60px;
+                height: 60px;
+                margin: 20px 0;
+                .img {
+                    height: 100%;
+                    width: 60px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: 100% auto;
+                }
+            }
+            .name {
+                display: flex;
+                align-items: center;
+                flex: 0 0 30px;
+                font-size: 18px;
+                margin-bottom: 4px;
+                cursor: pointer;
+                word-break: keep-all;
+                white-space: nowrap;
+                img {
+                    height: 16px;
+                    flex: 0 0 auto;
+                    margin-left: 6px;
+                }
+            }
+            .sign {
+                flex: 0 0 30px;
+                font-size: 14px;
+                color: #666;
+                margin-top: 4px;
+                cursor: pointer;
+            }
+            .qiandao {
+                display: flex;
+                align-items: center;
+
+                color: #fff;
+                padding: 2px 8px;
+                font-size: 14px;
+                border-radius: 8px;
+                &.enable{
+                    background-color: #ec9c2a;
+                }
+                &.disable{
+                    background-color: #999;;
+                }
+                cursor: pointer;
+                img {
+                    height: 12px;
+                    // vertical-align: middle;
+                    margin-right: 4px;
+                }
+            }
+            .money {
+                display: flex;
+                justify-content: center;
+                background-color: #00adef;
+                padding: 4px 50px;
+                border-radius: 30px;
+                align-items: center;
+                .maiji-bi,
+                .maiji-dou {
+                    display: flex;
+                    flex-direction: column;
+                }
+                .separate {
+                    flex: 0 0 1px;
+                    border-right: 1px solid #fff;
+                    margin: 0 30px;
+                    height: 26px;
+                }
+                .number {
+                    height: 24px;
+                    line-height: 24px;
+                    flex: 0 0 auto;
+                    color: #fff;
+                    font-size: 16px;
+                    font-weight: bold;
+                    text-align: center;
+                }
+                .text {
+                    flex: 0 0 auto;
+                    height: 16px;
+                    line-height: 16px;
+                    font-size: 12px;
+                    color: #f5f5f5;
+                }
+            }
+        }
+        .enter {
+            display: flex;
+            justify-content: center;
+            flex: 0 0 40px;
+            padding: 0 10px;
+            padding: 20px 0;
+            .group {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                flex: 0 0 33.33%;
+                padding: 0 10px;
+                cursor: pointer;
+                .img {
+                    flex: 0 0 30px;
+                    height: 30px;
+                    width: 30px;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: contain;
+                }
+                .txt {
+                    height: 30px;
+                    line-height: 30px;
+                }
+            }
+        }
+        .nav-list {
+            padding: 0 20px;
+            .list {
+                height: 40px;
+                width: 100%;
+                line-height: 40px;
+                padding: 0 10px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                &.active,
+                &:hover {
+                    background-color: #e7f6fc;
+                    color: #0684b4;
+                }
+                .img {
+                    height: 14px;
+                    width: 14px;
+                    margin-right: 6px;
+                }
+                // 观看历史
+                &.user-watch-history .img {
+                    background: url("/user-center/user-center-history-inactive.png") no-repeat center center / contain;
+                }
+                &.user-watch-history.active .img,
+                &.user-watch-history:hover .img {
+                    background: url("/user-center/user-center-history-active.png") no-repeat center center / contain;
+                }
+                // 浏览商品
+                &.user-goods-browsed .img {
+                    background: url("/user-center/user-center-browsed-inactive.png") no-repeat center center / contain;
+                }
+                &.user-goods-browsed.active .img,
+                &.user-goods-browsed:hover .img {
+                    background: url("/user-center/user-center-browsed-active.png") no-repeat center center / contain;
+                }
+                // 会员中心
+                &.user-vip .img {
+                    background: url("/user-center/user-center-vip-inactive.png") no-repeat center center / contain;
+                }
+                &.user-vip.active .img,
+                &.user-vip:hover .img {
+                    background: url("/user-center/user-center-vip-active.png") no-repeat center center / contain;
+                }
+                // 任务中心
+                &.user-task .img {
+                    background: url("/user-center/user-center-task-inactive.png") no-repeat center center / contain;
+                }
+                &.user-task.active .img,
+                &.user-task:hover .img {
+                    background: url("/user-center/user-center-task-active.png") no-repeat center center / contain;
+                }
+                // 消息中心
+                &.user-message .img {
+                    background: url("/user-center/user-center-message-inactive.png") no-repeat center center / contain;
+                }
+                &.user-message.active .img,
+                &.user-message:hover .img {
+                    background: url("/user-center/user-center-message-active.png") no-repeat center center / contain;
+                }
+                // 店铺关注
+                &.user-shop-focus .img {
+                    background: url("/user-center/user-center-shop-inactive.png") no-repeat center center / contain;
+                }
+                &.user-shop-focus.active .img,
+                &.user-shop-focus:hover .img {
+                    background: url("/user-center/user-center-shop-active.png") no-repeat center center / contain;
+                }
+                // 收获地址
+                &.user-address .img {
+                    background: url("/user-center/user-center-address-inactive.png") no-repeat center center / contain;
+                }
+                &.user-address.active .img,
+                &.user-address:hover .img {
+                    background: url("/user-center/user-center-address-active.png") no-repeat center center / contain;
+                }
+                // 我的课程
+                &.user-course .img {
+                    background: url("/user-center/user-center-course-inactive.png") no-repeat center center / contain;
+                }
+                &.user-course.active .img,
+                &.user-course:hover .img {
+                    background: url("/user-center/user-center-course-active.png") no-repeat center center / contain;
+                }
+                // 我的参与
+                &.user-join .img {
+                    background: url("/user-center/user-center-join-inactive.png") no-repeat center center / contain;
+                }
+                &.user-join.active .img,
+                &.user-join:hover .img {
+                    background: url("/user-center/user-center-join-active.png") no-repeat center center / contain;
+                }
+                // 我的收藏
+                &.user-collection .img {
+                    background: url("/user-center/user-center-collection-inactive.png") no-repeat center center / contain;
+                }
+                &.user-collection.active .img,
+                &.user-collection:hover .img {
+                    background: url("/user-center/user-center-collection-active.png") no-repeat center center / contain;
+                }
+                // 我的萌娃秀
+                &.user-mengwa-show .img {
+                    background: url("/user-center/user-center-mengwa-show-inactive.png") no-repeat center center / contain;
+                }
+                &.user-mengwa-show.active .img,
+                &.user-mengwa-show:hover .img {
+                    background: url("/user-center/user-center-mengwa-show-active.png") no-repeat center center / contain;
+                }
+                // 设置
+                &.user-setup .img {
+                    background: url("/user-center/user-center-setup-inactive.png") no-repeat center center / contain;
+                }
+                &.user-setup.active .img,
+                &.user-setup:hover .img {
+                    background: url("/user-center/user-center-setup-inactive.png") no-repeat center center / contain;
+                }
+            }
+        }
+    }
+    .main {
+        flex: 1 1 100%;
+        padding-left: 50px;
+        overflow: hidden;
+        .title {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+    }
+}

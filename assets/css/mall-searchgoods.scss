@@ -1,0 +1,250 @@
+// 背景颜色
+.container.mall-searchgoods {
+    background-color: #f4f4f4;
+
+    img {
+        &.top-info-img {
+            height: 20px;
+        }
+
+        &.search-price-highlow-img {
+            height: 10px;
+            margin-left: 3px;
+            vertical-align: middle;
+        }
+
+        &.search-goods-result-nodata-img {
+            height: 100%;
+        }
+    }
+}
+
+.top-info-searchbar-bg {
+    width: 100%;
+    height: 45px;
+    background-color: #f0f2f2;
+
+    .top-info-searchbar-content-bg {
+        margin-top: 20px;
+        height: 100%;
+        padding-left: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .top-info-img-bg {
+            //background-color: #c4a31d;
+            display: flex;
+            align-items: center;
+        }
+
+        .top-searchbar-bg {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 300px;
+            height: 40px;
+            line-height: 40px;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid #01acf0;
+
+            .searchbar-input-bg {
+                width: 240px;
+                height: 100%;
+
+                input {
+                    width: 100%;
+                    height: 100%;
+                    float: left;
+                    padding: 0 20px;
+                    font-size: 13px;
+                    color: #333;
+                    background-color: #fff;
+                }
+            }
+
+            .searchbar-searchbtn-bg {
+                width: 60px;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #01acf0;
+                color: #fff;
+
+                .iconfont {
+                    font-size: 25px;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}
+
+.top-goods-sort-bg {
+    width: 100%;
+    height: 92px;
+    padding-top: 29px;
+    //background-color: #c4a31d;
+
+    .top-goods-sort-content-bg {
+        height: 57px;
+        background-color: #fff;
+        padding: 0 9px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .goods-sort-bg {
+            //background-color: #c4a31d;
+            //padding: 0 15px;
+            height: 40px;
+            margin-left: 25px;
+            display: flex;
+            align-items: center;
+
+            p {
+                //background-color: #00ADEF;
+                color: #2e2e2e;
+                font-size: 14px;
+                width: 55px;
+                height: 22px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                &.active {
+                    background-color: #00adef;
+                    border: 1px solid #01acf0;
+                    border-radius: 10px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.search-goods-result-bg {
+    //width: 100%;
+    //height: 800px;
+    //background-color: #c4a31d;
+
+    .search-goods-result-content-bg {
+        background-color: #fff;
+        padding: 22px 0 0 22px;
+
+        .search-goods-content-item-bg {
+            //background-color: #ea4940;
+            //width: 100%;
+            //height: 250px;
+            //display: flex;
+            //justify-content: space-between;
+            margin-bottom: 30px;
+            padding: 0 10px 0 0;
+
+            .search-goods-content-bg {
+                width: 100%;
+                //background-color: #1aa203;
+
+                .goods-logo-img-bg {
+                    position: relative;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: cover;
+                    padding-top: 100%;
+                    background-image: url("../../static/temp-3.png");
+                    overflow: hidden;
+                }
+
+                .goods-title-price-bg {
+                    //background-color: #c4a31d;
+                    padding-top: 10px;
+
+                    .goods-price-bg {
+                        margin-top: 5px;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: baseline;
+                        //background-color: #1aa203;
+                    }
+
+                    p {
+                        color: #999;
+                        font-size: 14px;
+
+                        &.goods-title {
+                            //background-color: #00ADEF;
+                            height: 45px;
+                            color: #333;
+                            font-size: 16px;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            -webkit-line-clamp: 2;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                        }
+
+                        &.goods-current-price {
+                            margin-right: 8px;
+                            color: #ef1923;
+                            font-size: 18px;
+                            //background-color: #c4a31d;
+                        }
+
+                        &.goods-orgin-price {
+                            text-decoration: line-through;
+                            //background-color: #c4a31d;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .search-goods-result-nodata-bg {
+        //background-color: #c4a31d;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.bottom-search-pagenum-bg {
+    height: 100px;
+    //background-color: #c4a31d;
+
+    .bottom-search-pagenum-content-bg {
+        background-color: #fff;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .search-pagenum-number-bg {
+            //background-color: #c4a31d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .page-number {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 8px;
+                width: 32px;
+                height: 32px;
+                background-color: #000;
+                opacity: 0.2;
+                border-radius: 4px;
+                color: #fff;
+
+                &.active {
+                    background-color: #00adef;
+                    opacity: 1.0;
+                }
+            }
+        }
+    }
+}

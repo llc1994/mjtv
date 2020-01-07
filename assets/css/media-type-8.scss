@@ -1,0 +1,59 @@
+// 麦咭秒杀
+.media-type-8 {
+    padding: 0 10px;
+    .box {
+        width: 100%;
+        height: 100%;
+    }
+    .cover {
+        height: 250px;
+    }
+    .title {
+        height: 50px;
+        line-height: 20px;
+        overflow: hidden;
+        padding: 5px 10px;
+    }
+    .price {
+        display: flex;
+        justify-content: space-between;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 10px;
+        .new-price {
+            flex: 0 0 auto;
+            color: #ef1923;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .old-price {
+            flex: 0 0 auto;
+            color: #999999;
+            text-decoration: line-through;
+        }
+    }
+    .process-area {
+        display: flex;
+        align-items: center;
+        height: 30px;
+        padding: 0 10px;
+        .process {
+            display: flex;
+            flex: 1 1 100%;
+            height: 10px;
+            background-color: #f6f7f9;
+            margin-right: 10px;
+            border-radius: 5px;
+            .value {
+                height: 100%;
+                width: 60%;
+                border-radius: 5px;
+                background-color: #ef1923;
+            }
+        }
+        .number {
+            flex: 0 0 auto;
+            font-size: 12px;
+        }
+    }
+}

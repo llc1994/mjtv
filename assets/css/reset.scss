@@ -1,0 +1,158 @@
+html {
+    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    word-spacing: 1px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
+
+html{
+    // min-width: 1440px;
+}
+body {
+    // min-width: 1440px;
+    font-size: 16px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 500px white inset;
+}
+// 自定义浏览器滚动条
+// 滚动条整体部分，其中的属性有width,height,background,border（就和一个块级元素一样）等。
+.custom-scroll::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background-color: #000914;
+}
+// 滚动条两端的按钮。可以用display:none让其不显示，也可以添加背景图片，颜色改变显示效果。
+.custom-scroll::-webkit-scrollbar-button {
+    display: none;
+}
+// 外层轨道。可以用display:none让其不显示，也可以添加背景图片，颜色改变显示效果。
+.custom-scroll::-webkit-scrollbar-track {
+    display: none;
+}
+// 内层轨道，滚动条中间部分（除去）。
+.custom-scroll::-webkit-scrollbar-track-piece {
+}
+// 滚动条里面可以拖动的那部分
+.custom-scroll::-webkit-scrollbar-thumb {
+    background-color: #2c3a4b;
+}
+// 边角
+.custom-scroll::-webkit-scrollbar-corner {
+    display: none;
+}
+// 定义右下角拖动块的样式
+.custom-scroll::-webkit-resizer {
+    display: none;
+}
+// 手机滚动条
+// 滚动条整体部分，其中的属性有width,height,background,border（就和一个块级元素一样）等。
+.custom-mobile-scroll::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background-color: #000914;
+}
+// 滚动条两端的按钮。可以用display:none让其不显示，也可以添加背景图片，颜色改变显示效果。
+.custom-mobile-scroll::-webkit-scrollbar-button {
+    display: none;
+}
+// 外层轨道。可以用display:none让其不显示，也可以添加背景图片，颜色改变显示效果。
+.custom-mobile-scroll::-webkit-scrollbar-track {
+    display: none;
+}
+// 内层轨道，滚动条中间部分（除去）。
+.custom-mobile-scroll::-webkit-scrollbar-track-piece {
+}
+// 滚动条里面可以拖动的那部分
+.custom-mobile-scroll::-webkit-scrollbar-thumb {
+    background-color: #2c3a4b;
+}
+// 边角
+.custom-mobile-scroll::-webkit-scrollbar-corner {
+    display: none;
+}
+// 定义右下角拖动块的样式
+.custom-mobile-scroll::-webkit-resizer {
+    display: none;
+}
+// 去除a标签影响
+a,
+span {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+}
+
+// 占位符颜色
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    // color: #bbb;
+}
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    // color: #bbb;
+}
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    // color: #bbb;
+}
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    // color: #bbb;
+}
+// 内容外包围
+.wrap {
+    height: 100%;
+    width: 100%;
+    // min-width: 1440px;
+    //   此处的内间距要改为90px
+    padding: 0 1rem;
+}
+.wrap2{
+    height: 100%;
+    width: 100%;
+    // padding: 0 1rem;
+}
+
+// 伸缩盒居中
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+// 背景图居中-覆盖
+.background-cover {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.background-contain {
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: contain !important;
+}
+// 清除浮动
+.fx::after {
+    content: "";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}

@@ -1,0 +1,43 @@
+// 麦咭商城-新品推荐
+.media-type-9 {
+    .inner-wrap {
+        padding: 0 10px;
+        height: 240px;
+        display: flex;
+    }
+    .cover {
+        flex: 0 0 40%;
+        height: 100%;
+        // background-color: #eee;
+    }
+    .infos {
+        flex: 0 0 60%;
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .title {
+            flex: 0 0 auto;
+            font-size: 16px;
+        }
+        .summary {
+            flex: 0 0 auto;
+            color: #999;
+        }
+        .sale {
+            flex: 0 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .price {
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .number {
+                font-size: 14px;
+                text-decoration: line-through;
+                color: #999;
+            }
+        }
+    }
+}

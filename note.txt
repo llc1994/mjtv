@@ -1,0 +1,24 @@
+总宽度：1920px
+左右间隔：90px
+
+GET /?
+AccessKeyId=STS.NPVC2guqgWVET2owECYYV7n4F
+&Action=GetVideoPlayAuth
+&AuthInfoTimeout=7200
+&Format=JSON
+&SecurityToken=string
+&SignatureMethod=HMAC-SHA1
+&SignatureNonce=a8f4c7f7-1103-430e-9df5-b860224dbf28
+&SignatureVersion=1.0
+&Version=2017-03-21
+&VideoId=76a6855055ee48b594ce3a98495e66a0
+&Signature=idVQhPLxVe1Cim%2B4sKrF1FNzr6U%3D HTTP/1.1
+
+
+securityToken=CAISgQJ1q6Ft5B2yfSjIr5PjCIjTmK5G4JSuVhTek0UWVdZ62KufpDz2IHFNe3VtCeoWv/4zmGhQ6fcblrFpQppyXlDfWtF36plgqFP/PNeR4Z3ptOZcOBsYod3WWXDBx8b3T7jTbrG0I4WACT3tkit03sGJF1GLVECkNpukkINuas9tMCCzcTtBAqU9RGIg0rh4U0HcLvGwKBXnr3PNBU5zwGpGhHh49L60z7/3iHOcriWjlrVO9t6pf8D/NZc1ZsokabrvgrwqLJim+TVL9h1H+J1xiKF54jrdtrmfeQIAukrabrqOoow1cFMhPvdrQrQmqfHzmPA9oOvXmpRaM9q7kGj+ORqAATCBS2AQcnaqXBuxr5PAgQYGGKsqeCXOtHGUnWjKZAlyBd2xmk6s2143xclsQ+VcLGdAJ9kOs3BeX8G6hHhp+egg1Y3U6FNe0qnOIfe6LxQMrAFp3hYhnjgV82ywgbnlAAaL7CzdUF6I5TvwTmAnSWh/ZFzeLGzP5KNLHPfja2tj
+
+accessKeySecret=HkBtpKLxyS2zZfjvpehX78hskrEfBj58MHadGzJCdNKc
+
+accessKeyId=STS.NPVC2guqgWVET2owECYYV7n4F
+
+expiration=2019-10-17T14:18:22Z

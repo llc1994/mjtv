@@ -1,0 +1,86 @@
+.media-type-6 {
+    margin-bottom: 20px;
+    padding: 0 12px 0 0;
+
+    .inner-wrap {
+        width: 100%;
+        height: 100%;
+        background-color: #f8f8f8;
+        border-radius: 4px;
+
+        .inner-wrap-content {
+            padding: 15px;
+        }
+    }
+    .cover {
+        position: relative;
+        //height: 5rem;
+        // max-height: 260px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        padding-top: 177.87%;
+        background-image: url("../../static/temp-3.png");
+        overflow: hidden;
+        //border: 1px solid #eee;
+        .tips {
+            position: absolute;
+            bottom: 4px;
+            right: 4px;
+            height: 20px;
+            color: #000;
+        }
+    }
+    .info {
+        position: relative;
+        height: 30px;
+        line-height: 30px;
+        margin-top: 10px;
+        .head {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: -25px;
+            background-color: #000;
+            border-radius: 50%;
+            border: 2px solid #eee;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            background-image: url("../../static/mengwa-head.jpg");
+        }
+        .name {
+            position: absolute;
+            top: 0;
+            left: 50px;
+            right: 0;
+            padding-left: 10px;
+            height: 100%;
+            overflow: hidden;
+        }
+    }
+
+    .summary {
+        height: 60px;
+        line-height: 28px;
+        overflow: hidden;
+        margin-top: 16px;
+        font-size: 16px;
+        color: #333;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        text-overflow: ellipsis;
+    }
+
+    .time-people {
+        line-height: normal;
+        margin-top: 8px;
+        font-size: 14px;
+        color: #333;
+        span {
+            font-size: 12px;
+            color: #999;
+        }
+    }
+}

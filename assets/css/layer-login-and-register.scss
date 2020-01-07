@@ -1,0 +1,148 @@
+.layer {
+    .form {
+        &.login {
+            max-width: 500px;
+        }
+        &.register {
+            max-width: 500px;
+        }
+        &.tips {
+            max-width: 500px;
+        }
+        &.forget-password {
+            max-width: 500px;
+        }
+        width: 90%;
+        // max-width: 640px;
+        // height: 300px;
+        background-color: #fff;
+        padding: 0 10px 30px;
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 40px;
+            .logo {
+                display: flex;
+                align-items: center;
+                height: 34px;
+                .img {
+                    height: 100%;
+                }
+                .text {
+                    border-left: 1px solid #999;
+                    margin-left: 10px;
+                    color: #666;
+                    padding-left: 10px;
+                }
+            }
+            .close {
+                height: 16px;
+                width: 16px;
+                cursor: pointer;
+                background: url("/layer-close.png") no-repeat center center / contain;
+            }
+        }
+        .main {
+            padding: 30px 40px 10px 20px;
+            .tips-box {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .group {
+            height: 40px;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            margin-bottom: 10px;
+            .label {
+                flex: 0 0 40px;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: 40% auto;
+                &.user {
+                    background-image: url("/layer-form-user.png");
+                }
+                &.password {
+                    background-image: url("/layer-form-password.png");
+                }
+            }
+            .input {
+                flex: 1 1 100%;
+                input {
+                    height: 100%;
+                    width: 100%;
+                    float: left;
+                }
+            }
+            .getVerifyCode {
+                display: flex;
+                align-items: center;
+                flex: 0 0 auto;
+                color: #00adef;
+                font-size: 14px;
+                cursor: pointer;
+            }
+        }
+        .register-and-forget-password {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            & > div {
+                cursor: pointer;
+                flex: 0 0 auto;
+            }
+        }
+        .main-button {
+            height: 50px;
+            line-height: 50px;
+            font-size: 24px;
+            // font-weight: bold;
+            background-color: #00adef;
+            color: #fff;
+            text-align: center;
+            margin-top: 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+        .protocol {
+            // display: flex;
+            // justify-content: center;
+            // height: 24px;
+            margin: 20px 0 0;
+            font-size: 14px;
+            .link {
+                color: #00adef;
+                margin: 0 6px;
+            }
+        }
+        // 无需注册，直接登录
+        .direct-login-tips {
+            text-align: center;
+        }
+        .direct-login {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            .seprate {
+                flex: 0 0 40px;
+            }
+            .img {
+                height: 40px;
+                width: 40px;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: contain;
+                cursor: pointer;
+                &.qq {
+                    background-image: url("/layer-form-qq.png");
+                }
+                &.weixin {
+                    background-image: url("/layer-form-weixin.png");
+                }
+            }
+        }
+    }
+}

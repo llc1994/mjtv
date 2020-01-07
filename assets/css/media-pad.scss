@@ -1,0 +1,13 @@
+// 平板自适应
+@media screen and (max-width: $pad-width) {
+    .wrap {
+        padding: 0 10px;
+    }
+    .toper {
+        .search-area {
+            .other-enter {
+                display: none;
+            }
+        }
+    }
+}

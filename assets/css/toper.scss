@@ -1,0 +1,193 @@
+// 顶部区域样式 start ------------------------------------
+.toper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    z-index: 999999;
+    // 白色风格
+    &.white {
+        background-color: #fff;
+        color: #000;
+        .search-area {
+            .search-box {
+                border: 2px solid #01acf0;
+            }
+            .other-enter.black {
+                display: none;
+            }
+        }
+    }
+    // 黑色风格
+    &.black {
+        background-color: #272626;
+        color: #fff;
+        .search-area {
+            .search-box {
+                border: 2px solid #fff;
+            }
+            .other-enter.white {
+                display: none;
+            }
+        }
+    }
+
+    .wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo-area {
+        display: flex;
+        align-items: center;
+        flex: 0 0 auto;
+        height: 100%;
+        .logo {
+            flex: 0 0 auto;
+            height: 70%;
+        }
+    }
+    // 搜索区域
+    .search-area {
+        flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        height: 40px;
+
+        .search-box {
+            display: flex;
+            flex: 0 0 auto;
+            border-radius: 21px;
+            overflow: hidden;
+            flex-wrap: nowrap;
+
+            height: 40px;
+            .input {
+                input {
+                    // width: 3rem;
+                    // min-width: 150px;
+                    // max-width: 300px;
+                    width: 5rem;
+                    min-width: 150px;
+                    max-width: 410px;
+                    height: 100%;
+                    float: left;
+                    padding: 0 20px;
+                    font-size: 20px;
+                    background-color: #fff;
+                }
+            }
+            .button {
+                flex: 0 0 70px;
+                min-width: 70px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #01acf0;
+                color: #fff;
+                cursor: pointer;
+            }
+            .iconfont {
+                height: 30px;
+                width: 30px;
+                font-size: 30px;
+            }
+        }
+
+        // 其他入口
+        .other-enter {
+            display: flex;
+            flex: 0 0 auto;
+            height: 24px;
+            // color: #fff;
+            font-size: 18px;
+            &.black {
+                margin-left: 30px;
+            }
+            &.white {
+                padding-right: 20px;
+                .other-link {
+                    display: flex;
+                    align-items: center;
+                    flex: 0 0 auto;
+                    padding: 0 10px;
+                    &.active {
+                        color: #009cd9;
+                        font-weight: bold;
+                    }
+                    // &.active::before {
+                    //     content: "";
+                    //     display: inline-block;
+                    //     width: 24px;
+                    //     height: 24px;
+                    //     background-color: #fff;
+                    //     // margin-right: 6px;
+                    //     // background: url("/hunan-tv.png") no-repeat center center / 90% auto;
+                    // }
+                }
+            }
+
+            //
+            .other-link {
+                flex: 0 0 auto;
+            }
+            .separate {
+                flex: 0 0 1px;
+                border-right: 1px solid #ddd;
+                margin: 0 20px;
+            }
+        }
+    }
+    // 快速导航区域
+    .quick-area {
+        flex: 0 0 auto;
+        display: flex;
+        padding: 5px 0;
+        .mobile2{
+            display: none;
+        }
+        .img {
+            flex: 0 0 40px;
+            height: 40px;
+            width: 40px;
+            margin-left: 10px;
+            cursor: pointer;
+            &.search {
+                background: url("/toper/search.png") no-repeat center center / 84% auto;
+                display: none;
+            }
+            &.vip {
+                background: url("/toper/vip.png") no-repeat center center / 80% auto;
+            }
+            &.mallcart {
+                background: url("../../static/toper/mallcart.png") no-repeat center center / 80% auto;
+            }
+            &.history {
+                background: url("/toper/history.png") no-repeat center center / 80% auto;
+            }
+            &.upload {
+                background: url("/toper/upload.png") no-repeat center center / 80% auto;
+            }
+            &.mobile {
+                background: url("/toper/mobile.png") no-repeat center center / 50% auto;
+            }
+            &.user.not-login {
+                background: url("../../static/default-user-head-image.png") no-repeat center center / 100% auto;
+                border-radius: 50%;
+            }
+            &.user.has-login {
+                background: url("../../static/default-head-thumbnail.png") no-repeat center center / 100% auto;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+// 顶部区域样式 end ------------------------------------
+
+// 顶部空格
+.toper-space {
+    height: 60px;
+    // min-height: 50px;
+    // max-height: 70px;
+}

@@ -1,0 +1,48 @@
+.category-rank {
+    height: 470px;
+    padding: 10px 0 10px 20px;
+    // margin-left: 20px;
+    .title {
+        height: 40px;
+        margin-bottom: 30px;
+        line-height: 50px;
+        font-size: 26px;
+    }
+    .box-area {
+        max-height: 400px;
+        background-color: #f8f8f8;
+        padding: 10px;
+    }
+    .box {
+        height: 1rem;
+        max-height: 50px;
+        width: 50%;
+        margin-bottom: 0.3rem;
+        float: left;
+        cursor: pointer;
+    }
+    .order-and-name {
+        display: flex;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        font-size: 14px;
+        .order {
+            flex: 0 0 16px;
+        }
+        .name {
+            flex: 1 1 100%;
+            overflow: hidden;
+        }
+    }
+    .date {
+        height: 20px;
+        line-height: 20px;
+        color: #999;
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding-right: 10px;
+    }
+}

@@ -1,0 +1,64 @@
+.user-address {
+    .add-address {
+        line-height: 40px;
+        font-size: 30px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        img {
+            height: 24px;
+            vertical-align: middle;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+    }
+    .table {
+        .th {
+            height: 40px;
+            background-color: #e7f6fc;
+            color: #00adef;
+        }
+        .tr {
+            height: 40px;
+            border-bottom: 1px solid #ddd;
+        }
+        .th,
+        .tr {
+            display: flex;
+            align-items: center;
+        }
+        .td {
+            display: flex;
+            justify-content: center;
+            &.space-between {
+                justify-content: space-around;
+            }
+            span {
+                cursor: pointer;
+            }
+            .delete {
+                color: #e33;
+            }
+        }
+        .x10 {
+            width: 10%;
+            flex: 0 0 10%;
+        }
+        .x15 {
+            width: 15%;
+            flex: 0 0 15%;
+        }
+        .x30 {
+            width: 30%;
+            flex: 0 0 30%;
+        }
+        .x35 {
+            width: 35%;
+            flex: 0 0 35%;
+        }
+        .x40 {
+            width: 40%;
+            flex: 0 0 40%;
+        }
+    }
+}
