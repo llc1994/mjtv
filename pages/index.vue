@@ -717,6 +717,10 @@ export default {
                     {
                         name: '周播节目',
                         token: '0641b575cfdb4b6fbf0a50a921262304'
+                    },
+                    {
+                        name: '会员',
+                        token: '0641b575cfdb4b6fbf0a50a921262304'
                     }
                 ]
             },
