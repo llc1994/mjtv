@@ -31,6 +31,7 @@
                     <div class="unit-box custom-scroll">
                         <div :to="'/play/' + item.id" class="unit" :class="{ active: item.active === true }" v-for="(item, index) in DramaLists.resItems" :key="index" @click="PlayJi(item)">
                             <span>{{ item.index }}</span>
+                            <div class="vip-unit">vip</div>
                         </div>
                     </div>
                     <!-- 推荐区域 -->
@@ -603,3 +604,22 @@ export default {
     }
 };
 </script>
+<style lang="scss">
+    .unit{
+        position: relative;
+        >span{
+            padding: 2px 1px !important;
+        }
+        .vip-unit{
+            width: 26px;
+            height: 20px;
+            background-color: RGB(238,117,20);
+            color: RGB(245,236,251);
+            border-radius: 2px;
+            text-align: center;
+            line-height: 20px;
+            margin-top: 2px;
+        }
+    }
+
+</style>

@@ -38,6 +38,7 @@
                                 }"
                             >
                                 <div class="tips">{{ item.my_title_one }}</div>
+
                             </div>
                             <div class="name">{{ item.descript }}</div>
                             <div class="summary">{{ item.my_title_two }}</div>
@@ -128,6 +129,7 @@
                                 }"
                             >
                                 <div class="tips">{{ item.my_title_one }}</div>
+                                <div class="payment">付费</div>
                             </div>
                             <div class="name">{{ item.descript }}</div>
                             <div class="summary">{{ item.my_title_two }}</div>
@@ -829,6 +831,21 @@ export default {
     }
     .col {
         padding: 0 9px;
+    }
+}
+.cover {
+    position: relative;
+    .payment {
+        width: 60px;
+        height: 25px;
+        background: RGB(114,213,234);
+        color: RGB(205,245,251);
+        text-align: center;
+        line-height: 25px;
+        border-radius: 3px;
+        position: absolute;
+        top: 0;
+        left: 2px;
     }
 }
 </style>

@@ -872,6 +872,10 @@ export default {
                     {
                         name: '麦咭小厨',
                         token: '5dde5c03144f452db204887e3e3aafda'
+                    },
+                    {
+                        name: '会员',
+                        token: ''
                     }
                 ]
             }

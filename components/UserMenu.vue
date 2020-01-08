@@ -1,13 +1,15 @@
 <template>
     <div class="menu">
         <div class="info">
-            <div class="head-thumbnail">
+            <div class="head-thumbnail head-box">
                 <div
                     class="img"
                     :style="{
                         backgroundImage: 'url(' + (userData.userIcon || '/default-head-thumbnail.png') + ')'
                     }"
-                ></div>
+                >
+                </div>
+                <div class="vip-icon"></div>
             </div>
             <div class="name" @click="openUpdatePersonalInfoPopup">
                 {{ userData.babyName }}
@@ -16,6 +18,24 @@
             <div class="qiandao enable" @click="openQiandaoPopup" v-if="!isSign"><img src="/user-menu-qiandao.png" />签到领奖</div>
             <div class="qiandao disable" @click="openQiandaoPopup" v-else><img src="/user-menu-qiandao.png" />已签到</div>
             <div class="sign">{{ userData.sign }}</div>
+            <div class="fans-container">
+                <div class="fans-item">
+                    <p class="num">12</p>
+                    <span class="desc">粉丝</span>
+                </div>
+                <div class="fans-item">
+                    <p class="num">12</p>
+                    <span class="desc">关注</span>
+                </div>
+                <div class="fans-item">
+                    <p class="num">12</p>
+                    <span class="desc">点赞</span>
+                </div>
+                <div class="fans-item">
+                    <p class="num">12</p>
+                    <span class="desc">获赞</span>
+                </div>
+            </div>
             <div class="money">
                 <div class="maiji-bi">
                     <div class="number">
@@ -45,6 +65,46 @@
                 <div class="txt">我的钱包</div>
             </div>
         </div>
+        <!-- 缓存/漫画/创作中心/我的购买/主题皮肤 -->
+        <div class="user-Container">
+            <div class="top">
+                <div class="top-item">
+                    <p>我的麦咭会员></p>
+                    <p>还差100成长值升级</p>
+                </div>
+                <div class="top-item">
+                    <p>会员福利俱乐部></p>
+                    <p>海量福利领取</p>
+                </div>
+                <div class="top-item">
+                    <p>麦咭漫画></p>
+                    <p>海量漫画已更新</p>
+                </div>
+            </div>
+            <div class="content-container">
+                <div class="c-item">
+                    <img class="icon" src="../assets/images/video-icon.png">
+                    <p>我的缓存</p>
+                </div>
+                <div class="c-item">
+                    <img class="icon" src="../assets/images/video-icon.png">
+                    <p>我的缓存</p>
+                </div>
+                <div class="c-item">
+                    <img class="icon" src="../assets/images/video-icon.png">
+                    <p>我的缓存</p>
+                </div>
+                <div class="c-item">
+                    <img class="icon" src="../assets/images/video-icon.png">
+                    <p>我的缓存</p>
+                </div>
+                <div class="c-item">
+                    <img class="icon" src="../assets/images/video-icon.png">
+                    <p>我的缓存</p>
+                </div>
+            </div>
+        </div>
+        <!-- list -->
         <div class="nav-list">
             <nuxt-link to="/user-vip" class="list user-vip" :class="{ active: menu.isActive === 'user-vip' }">
                 <span class="img"></span>会员中心
@@ -1360,6 +1420,103 @@ export default {
             background-color: #00adef;
             color: #fff;
             cursor: pointer;
+        }
+    }
+}
+.head-box{
+    position: relative;
+    .vip-icon{
+        width: 30px;
+        height: 30px;
+        background: url('../assets/images/V.png') no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        left: 40px;
+        top: -25px;
+    }
+}
+.sign{
+    flex: 0 0 0 0;
+}
+.fans-container{
+    width: 100%;
+    height: 50px;
+    background: white;
+    margin: 10px auto 15px;
+    .fans-item{
+        width: 25%;
+        height: 100%;
+        float: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .desc{
+            color: RGB(185,185,185);
+            font-size: 14px;
+        }
+        .num{
+            color: RGB(69,16,16);
+        }
+    }
+}
+.user-Container {
+    width: 100%;
+    min-height: 260px;
+    background: RGB(231,246,252);
+    margin-bottom: 10px;
+    .top{
+        width: 100%;
+        height: 60px;
+        background: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .top-item{
+            width: 33%;
+            height: 55px;
+            border: 1px solid RGB(187,187,187);
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 12px;
+            >p:nth-child(1) {
+                color: RGB(213,176,24);
+                cursor: pointer;
+            }
+            >p:nth-child(2) {
+                color: RGB(52,52,52);
+                overflow: hidden;
+                text-overflow:ellipsis;
+                white-space: nowrap;
+            }
+            >p{
+                margin-top: 5px;
+            }
+        }
+    }
+    .content-container{
+        width: 100%;
+        height: 200px;
+        .c-item{
+            width: 80px;
+            height: 60px;
+            float: left;
+            margin: 5px 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            .icon{
+                width: 32px;
+                height: 32px;
+            }
+            >p{
+                font-size: 12px;
+                color: #888484;
+            }
         }
     }
 }
