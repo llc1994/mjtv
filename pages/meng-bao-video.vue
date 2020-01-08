@@ -190,6 +190,10 @@ export default {
                     {
                         name: '最新',
                         token: ''
+                    },
+                    {
+                        name: '会员',
+                        token: ''
                     }
                 ]
             },
