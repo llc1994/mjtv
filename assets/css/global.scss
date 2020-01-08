@@ -246,3 +246,21 @@
         // padding-right: 13.5px;
     }
 }
+
+.vip-brand{
+    position: relative;
+    &::before{
+        content: 'VIP抢先看';
+        display: block;
+        position: absolute;
+        background: #FDD000;
+        font-size: 12px;
+        padding: 0px 8px;
+        border-radius: 4px;
+    }
+    &.vip-top-left::before{
+        left: 4px;
+        top: 4px;
+        color: #333333;
+    }
+}

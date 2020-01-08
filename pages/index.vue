@@ -58,7 +58,7 @@
                             <nuxt-link target="_blank" :to="'/play/' + item.itemId" class="media-type-1" @click="usePlay(item)">
                                 <div class="inner-wrap">
                                     <div
-                                        class="cover cover222"
+                                        class="cover cover222 vip-brand vip-top-left"
                                         :class="{ active222: cover222 }"
                                         :style="{
                                             backgroundImage: 'url(' + item.customImgUrl + '?x-oss-process=image/resize,h_240/format,jpeg/quality,Q_90)'
@@ -748,6 +748,10 @@ export default {
                     {
                         name: '麦咭小厨',
                         token: '721a647672ae43a69fac3e81733a50a5'
+                    },
+                    {
+                        name: '会员',
+                        token: '0641b575cfdb4b6fbf0a50a921262304'
                     }
                 ]
             },
@@ -766,6 +770,10 @@ export default {
                     {
                         name: '经典动画',
                         token: 'ffc84360c04546a59ca21c9166331f5c'
+                    },
+                    {
+                        name: '会员',
+                        token: '0641b575cfdb4b6fbf0a50a921262304'
                     }
                 ]
             },
@@ -792,6 +800,10 @@ export default {
                     {
                         name: '童话故事',
                         token: 'cf84dcf929dc4edaa25b5a1134c3f331'
+                    },
+                    {
+                        name: '会员',
+                        token: '0641b575cfdb4b6fbf0a50a921262304'
                     }
                 ]
             },
@@ -814,6 +826,10 @@ export default {
                     {
                         name: '教育',
                         token: '20c7fef6eded4569bceece7f2e31bed9'
+                    },
+                    {
+                        name: '会员',
+                        token: '0641b575cfdb4b6fbf0a50a921262304'
                     }
                 ]
             },
@@ -828,6 +844,10 @@ export default {
                     {
                         name: '店铺推荐',
                         token: 'bb08ac449ffc4522adc57ddb1a6eaff0'
+                    },
+                    {
+                        name: '会员',
+                        token: '0641b575cfdb4b6fbf0a50a921262304'
                     }
                     // {
                     //     name: "秒杀",
@@ -850,6 +870,10 @@ export default {
                     {
                         name: '书籍',
                         token: '8c34819a126e445891899cd9f7445d30'
+                    },
+                    {
+                        name: '会员',
+                        token: '0641b575cfdb4b6fbf0a50a921262304'
                     }
                 ]
             },
@@ -875,7 +899,7 @@ export default {
                     },
                     {
                         name: '会员',
-                        token: ''
+                        token: '0641b575cfdb4b6fbf0a50a921262304'
                     }
                 ]
             }
